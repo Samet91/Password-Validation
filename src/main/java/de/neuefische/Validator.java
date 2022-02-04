@@ -30,7 +30,7 @@ public class Validator {
     private static boolean checkPasswordHasNumber(String password) {
         for (char c : password.toCharArray()) {
 
-            if (!Character.isLetter(c)) // isDigit einfügen..
+            if (Character.isDigit(c))
                 return true;
         }
         return false;
