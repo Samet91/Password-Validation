@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println(Validator.createPassword("Fernbanche1"));
+        System.out.println(Validator.createPassword("hausgarten12"));
     }
 
 }
