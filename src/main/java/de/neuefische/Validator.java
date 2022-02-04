@@ -16,11 +16,11 @@ public class Validator {
             return ERROR_PASSWORD_SIZE_TO_SHORT;
         }
 
-        if(!checkPasswordHasNumber(password)){
+        if (!checkPasswordHasNumber(password)) {
             return ERROR_PASSWORD_REQUIRE_NUMBERS;
         }
 
-        if(!checkPasswordHasLowerAndUppercase(password)) {
+        if (!checkPasswordHasLowerAndUppercase(password)) {
             return ERROR_PASSWORD_HAS_NOT_LOWER_AND_UPPERCASE;
         }
         return PASSWORD_IS_SUCCESSFULLY_CREATED;
@@ -37,7 +37,6 @@ public class Validator {
     }
 
 
-
     private static boolean checkPasswordHasLowerAndUppercase(String password) {
         boolean hasLowerCase = false;
         boolean hasUpperCase = false;
@@ -45,7 +44,7 @@ public class Validator {
             if (Character.isUpperCase(c)) {
                 hasUpperCase = true;
             }
-            if(Character.isLowerCase(c)) {
+            if (Character.isLowerCase(c)) {
                 hasLowerCase = true;
             }
         }
