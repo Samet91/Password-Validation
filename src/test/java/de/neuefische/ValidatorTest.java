@@ -9,7 +9,7 @@ class ValidatorTest {
     @Test
     void shouldReturnFailMessageIfPasswordIsLessThan10Chars() {
         // given
-        String password = "haus";
+        String password = "house";
         // when
         String passwordShortFailMessage = Validator.createPassword(password);
         // then
@@ -36,4 +36,13 @@ class ValidatorTest {
         assertEquals(Validator.PASSWORD_IS_SUCCESSFULLY_CREATED, successfullyCreatedMessage);
     }
 
+    @Test
+    void shouldReturnFailMessageIfPasswordHasNotOneUpperAndLowercase() {
+        // given
+        String password = "javascriptt1";
+        // when
+        String passwordHasNotUpperAndLowercaseMessage = Validator.createPassword(password);
+        // then
+        assertEquals(Validator.ERROR_PASSWORD_HAS_NOT_LOWER_AND_UPPERCASE, passwordHasNotUpperAndLowercaseMessage);
+    }
 }
