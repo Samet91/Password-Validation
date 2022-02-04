@@ -17,7 +17,7 @@ class ValidatorTest {
     }
 
     @Test
-    void shouldReturnFailMessageIfPasswordHasNotAtLeastOneNumber() {
+    void shouldReturnFailMessageIfPasswordHasNoNumber() {
         // given
         String password = "Goldenlounge";
         // when
