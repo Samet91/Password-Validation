@@ -45,4 +45,31 @@ class ValidatorTest {
         // then
         assertEquals(Validator.ERROR_PASSWORD_HAS_NOT_LOWER_AND_UPPERCASE, passwordHasNotUpperAndLowercaseMessage);
     }
+
+    @Test
+    void shouldReturnCorrectMessageIfPasswordsAreCorrect () {
+        // given
+        String[] passwordArray = new String[3];
+        passwordArray[0] = "HelloWorld1";
+        passwordArray[1] = "HelloCoaches1";
+        passwordArray[2] = "HelloStudents1";
+        // when
+        String passwordHasNotUpperAndLowercaseMessage = Validator.checkPasswordsHasConditionalsFromValidateMethod(passwordArray);
+        // then
+        assertEquals(Validator.PASSWORD_IN_ARRAY_ARE_CORRECT, passwordHasNotUpperAndLowercaseMessage);
+    }
+
+    @Test
+    void shouldReturnFailMessageIfPasswordsAreWrong () {
+        // given
+        String[] passwordArray = new String[3];
+        passwordArray[0] = "HelloWorld";
+        passwordArray[1] = "HelloCoaches1";
+        passwordArray[2] = "HelloStudents1";
+        // when
+        String passwordHasNotUpperAndLowercaseMessage = Validator.checkPasswordsHasConditionalsFromValidateMethod(passwordArray);
+        // then
+        assertEquals(Validator.ERROR_LIST_HAS_WRONG_PASSWORD, passwordHasNotUpperAndLowercaseMessage);
+    }
+
 }
