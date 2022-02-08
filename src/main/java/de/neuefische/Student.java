@@ -7,6 +7,7 @@ public class Student {
     private String firstName;
     private String lastName;
     private int semester;
+    private int id;
 
 
     @Override
@@ -15,6 +16,7 @@ public class Student {
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", semester=" + semester +
+                ", id=" + id +
                 '}';
     }
 
@@ -35,10 +37,11 @@ public class Student {
         return Objects.hash(firstName, lastName, semester);
     }
 
-    public Student(String firstName, String lastName, int semester) {
+    public Student(String firstName, String lastName, int semester, int id) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.semester = semester;
+        this.id = id;
     }
 
     public Student() {

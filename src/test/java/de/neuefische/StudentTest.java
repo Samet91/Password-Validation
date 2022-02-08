@@ -9,7 +9,7 @@ class StudentTest {
 
     @Test
     void toStrings() {
-        Student student1 = new Student("Hans", "Peter", 5);
+        Student student1 = new Student("Hans", "Peter", 5, 1);
         String name = student1.toString();
         assertEquals("Student{firstName='Hans', lastName='Peter', semester=5}", name);
     }
@@ -37,8 +37,8 @@ class StudentTest {
 
     @Test
     void testEquals() {
-        var student = new Student("Hans", "peter", 3);
-        var student2 = new Student("Peter", "Hans", 3);
+        var student = new Student("Hans", "peter", 3, 1);
+        var student2 = new Student("Peter", "Hans", 3, 2);
 
         assertFalse(student.equals(student2));
     }
