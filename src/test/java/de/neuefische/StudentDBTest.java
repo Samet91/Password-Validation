@@ -2,16 +2,15 @@ package de.neuefische;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class StudentDBTest {
 
     @Test
     void returnStudents() {
         //given
-        Student student1 = new Student("Hans", "Peter", 5, 1);
+        PhysikStudent student1 = new PhysikStudent("Hans", "Peter", 5, 1);
+        PhysikStudent student2 = new PhysikStudent("Max", "Meyer", 4, 2);
         //when
-        Student[] students = {student1};
+        PhysikStudent[] students = {student1, student2};
         StudentDB studentDB = new StudentDB(students);
         //then
         System.out.println(studentDB.toString());
