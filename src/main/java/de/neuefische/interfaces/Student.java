@@ -1,4 +1,4 @@
-package de.neuefische;
+package de.neuefische.interfaces;
 
 public interface Student {
 

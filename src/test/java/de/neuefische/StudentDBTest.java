@@ -1,5 +1,7 @@
 package de.neuefische;
 
+import de.neuefische.interfaces.PhysikStudent;
+import de.neuefische.interfaces.StudentDB;
 import org.junit.jupiter.api.Test;
 
 class StudentDBTest {

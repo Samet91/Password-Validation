@@ -1,5 +1,6 @@
 package de.neuefische;
 
+import de.neuefische.interfaces.PhysikStudent;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

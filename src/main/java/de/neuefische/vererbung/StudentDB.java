@@ -1,4 +1,4 @@
-package de.neuefische;
+package de.neuefische.vererbung;
 
 import java.util.Arrays;
 

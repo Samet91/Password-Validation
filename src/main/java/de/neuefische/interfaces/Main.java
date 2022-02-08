@@ -1,6 +1,6 @@
-package de.neuefische;
+package de.neuefische.interfaces;
 
-import validator.Validator;
+import de.neuefische.validator.Validator;
 
 public class Main {
 
