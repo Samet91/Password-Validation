@@ -1,4 +1,4 @@
-package de.neuefische.interfaces;
+package de.neuefische.validator;
 
 import de.neuefische.validator.Validator;
 

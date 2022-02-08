@@ -8,6 +8,7 @@ public class StudentDB {
 
 
     public StudentDB(Student[] arr) {
+
         this.students = arr;
     }
 
@@ -19,14 +20,17 @@ public class StudentDB {
     }
 
     public Student[] list() {
+
         return students;
     }
 
     public Student[] getArr() {
+
         return students;
     }
 
     public void setArr(Student[] arr) {
+
         this.students = arr;
     }
 }
