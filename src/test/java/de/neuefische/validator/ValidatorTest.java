@@ -1,4 +1,4 @@
-package validator;
+package de.neuefische.validator;
 
 import org.junit.jupiter.api.Test;
 import de.neuefische.validator.Validator;
