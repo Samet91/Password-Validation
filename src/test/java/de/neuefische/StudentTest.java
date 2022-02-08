@@ -11,7 +11,7 @@ class StudentTest {
     void toStrings() {
         PhysikStudent student1 = new PhysikStudent("Hans", "Peter", 5, 1);
         String name = student1.toString();
-        assertEquals("Student{firstName='Hans', lastName='Peter', semester=5}", name);
+        assertEquals("Student{firstName='Hans', lastName='Peter', semester=5, id=1}", name);
     }
 
     @Test

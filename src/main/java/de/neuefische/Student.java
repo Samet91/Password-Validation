@@ -2,8 +2,8 @@ package de.neuefische;
 
 public interface Student {
 
-    String getFirstname();
-    void setFirstname(String firstName);
+    String getFirstName();
+    void setFirstName(String firstName);
     String getLastName();
     void setLastName(String lastName);
     int getSemester();

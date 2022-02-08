@@ -50,12 +50,12 @@ public class PhysikStudent implements Student {
     }
 
     @Override
-    public String getFirstname() {
+    public String getFirstName() {
         return firstName;
     }
 
     @Override
-    public void setFirstname(String firstName) {
+    public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 

@@ -1,6 +1,7 @@
-package de.neuefische;
+package validator;
 
 import org.junit.jupiter.api.Test;
+import validator.Validator;
 
 import static org.junit.jupiter.api.Assertions.*;
 
