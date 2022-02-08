@@ -1,4 +1,4 @@
-package de.neuefische;
+package validator;
 
 public class Validator {
 
