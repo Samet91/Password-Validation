@@ -2,7 +2,7 @@ package de.neuefische.interfaces;
 
 import java.util.Objects;
 
-public class BioligioStudent implements Student {
+public class BioligieStudent implements Student {
 
     private String firstName;
     private String lastName;
@@ -10,7 +10,7 @@ public class BioligioStudent implements Student {
     private int id;
     private int course;
 
-    public BioligioStudent(String firstName, String lastName, int semester, int id, int course) {
+    public BioligieStudent(String firstName, String lastName, int semester, int id, int course) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.semester = semester;
@@ -18,7 +18,7 @@ public class BioligioStudent implements Student {
         this.course = course;
     }
 
-    public BioligioStudent() {
+    public BioligieStudent() {
 
     }
 
@@ -26,8 +26,11 @@ public class BioligioStudent implements Student {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        BioligioStudent that = (BioligioStudent) o;
-        return semester == that.semester && id == that.id && course == that.course && Objects.equals(firstName, that.firstName) && Objects.equals(lastName, that.lastName);
+        BioligieStudent that = (BioligieStudent) o;
+        return semester == that.semester &&
+                id == that.id && course == that.course &&
+                Objects.equals(firstName, that.firstName) &&
+                Objects.equals(lastName, that.lastName);
     }
 
     @Override
