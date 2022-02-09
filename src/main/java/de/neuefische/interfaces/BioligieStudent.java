@@ -24,8 +24,10 @@ public class BioligieStudent implements Student {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
         BioligieStudent that = (BioligieStudent) o;
         return semester == that.semester &&
                 id == that.id && course == that.course &&

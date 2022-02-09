@@ -8,6 +8,7 @@ public class PhysikStudent implements Student {
     private String lastName;
     private int semester;
     private int id;
+    private int course;
 
 
     @Override
@@ -85,7 +86,7 @@ public class PhysikStudent implements Student {
 
     @Override
     public void setCourse(int course) {
-
+        this.course = course;
     }
 
 }
