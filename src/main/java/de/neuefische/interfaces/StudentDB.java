@@ -18,7 +18,7 @@ public class StudentDB {
                 '}';
     }
 
-    public ArrayList<Student> list() {
+    public ArrayList<Student> getter() {
 
         return students;
     }
