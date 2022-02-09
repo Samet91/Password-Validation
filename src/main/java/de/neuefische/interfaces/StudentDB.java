@@ -1,32 +1,31 @@
 package de.neuefische.interfaces;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 
 public class StudentDB {
 
-    private Student students[];
+    private ArrayList<Student> students;
 
 
-    public StudentDB(Student[] arr) {
+    public StudentDB(ArrayList<Student> arr) {
         this.students = arr;
     }
 
     @Override
     public String toString() {
         return "StudentDB{" +
-                "students=" + Arrays.toString(students) +
+                "students=" + students +
                 '}';
     }
 
-    public Student[] list() {
+    public ArrayList<Student> list() {
+
         return students;
     }
 
-    public Student[] getArr() {
-        return students;
-    }
 
-    public void setArr(Student[] arr) {
+    public void setArr(ArrayList<Student> arr) {
+
         this.students = arr;
     }
 }
